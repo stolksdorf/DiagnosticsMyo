@@ -1,0 +1,75 @@
+
+.positional{
+	.title{
+		.scifi();
+		position       : relative;
+		padding-left   : 10px;
+		font-size      : 1.3em;
+		text-transform : uppercase;
+		border-left    : solid @blue1 1px;
+	}
+	.coordinates{
+		position       : relative;
+		display        : inline-block;
+		vertical-align : middle;
+		overflow       : hidden;
+		height         : 100px;
+		width          : 100px;
+		margin         : 10px;
+		border         : 1px solid #84FFF1;
+		.y_axis{
+			position      : absolute;
+			width         : 100%;
+			border-bottom : 1px solid #427F78;
+		}
+		.x_axis{
+			position     : absolute;
+			height       : 100%;
+			border-right : 1px solid #427F78;
+		}
+	}
+	.roll{
+		position       : relative;
+		display        : inline-block;
+		vertical-align : middle;
+		height         : 100px;
+		width          : 100px;
+		margin         : 10px;
+		border         : 1px solid #84FFF1;
+		border-radius  : 5em;
+		.roll_bar{
+			position                 : absolute;
+			left                     : 50%;
+			height                   : 50%;
+			width                    : 1px;
+			background-color         : #427F78;
+			-webkit-transform        : rotate(0deg);
+			-webkit-transform-origin : center bottom;
+		}
+	}
+	table{
+		display        : inline-block;
+		vertical-align : middle;
+		font-size      : 0.8em;
+		sup{
+			vertical-align : super;
+			font-size      : smaller;
+		}
+		tr {
+			&:hover{
+				background-color : transparent;
+			}
+			&:last-child{
+				td{
+					border-bottom : none;
+				}
+			}
+			td{
+				border-bottom : 1px solid @blue1;
+				&:first-child{
+					border-right : 1px solid @blue1;
+				}
+			}
+		}
+	}
+}

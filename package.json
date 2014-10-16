@@ -1,0 +1,59 @@
+{
+  "name": "diagnostics",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Diagnostics page for Myo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Scott Tolksdorf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thalmic/palette/issues"
+  },
+  "homepage": "",
+  "devDependencies": {
+    "async": "^0.9.0",
+    "brfs": "^1.2.0",
+    "browserify": "^4.1.5",
+    "connect": "^2.17.3",
+    "express": "^4.3.1",
+    "gulp": "^3.8.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-iconfont": "^0.1.2",
+    "gulp-if": "^1.2.4",
+    "gulp-less": "^1.2.3",
+    "gulp-livereload": "^1.5.0",
+    "gulp-nodemon": "^1.0.3",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.1.1",
+    "gulp-uglify": "^0.3.1",
+    "gulp-util": "^2.2.14",
+    "handlebars": "^2.0.0-alpha.4",
+    "palette": "git+ssh://git@github.com:thalmic/palette.git",
+    "jquery": "^2.1.1",
+    "jwt-simple": "^0.2.0",
+    "literalify": "^0.3.0",
+    "moment": "^2.8.1",
+    "node-jsx": "^0.10.0",
+    "react": "^0.10.0",
+    "react-addons": "^0.9.0",
+    "reactify": "^0.13.1",
+    "request": "^2.42.0",
+    "run-sequence": "^0.3.6",
+    "tiny-lr": "0.0.7",
+    "underscore": "^1.6.0",
+    "vinyl-buffer": "0.0.0",
+    "vinyl-source-stream": "^0.1.1"
+  },
+  "dependencies": {
+    "jquery": "^2.1.1",
+    "react": "^0.11.1",
+    "url-pattern": "^0.6.0",
+    "ws": "^0.4.32"
+  }
+}

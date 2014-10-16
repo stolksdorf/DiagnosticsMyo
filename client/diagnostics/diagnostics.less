@@ -1,0 +1,86 @@
+
+@import 'palette/main.less';
+@blue0 : #84FFF1;
+@blue1 : #427F78;
+@bg    : #0A0A0A;
+@copy : #eee;
+@yellow : #FFF38A;
+@red : #FF4B23;
+@font-face {
+	font-family : Neuropol;
+	src         : url('/assets/neuropol.ttf');
+}
+.scifi(){
+	font-family : Neuropol;
+}
+body{
+	padding          : 30px;
+	background-color : @bg;
+	background-image : url('/assets/bg.png');
+	font-family      : 'Open Sans', sans-serif;
+	font-weight      : 300;
+	color            : @blue0;
+}
+
+.diagnostics{
+
+	.left{
+		float : left;
+		width : 45%;
+	}
+	.right{
+		float : left;
+		width : 45%;
+	}
+
+}
+
+
+.pips{
+	&>*{
+		position         : absolute;
+		height           : 3px;
+		width            : 3px;
+		background-color : @blue0;
+		border-radius    : 5em;
+	}
+	.ul{
+		top  : -2px;
+		left : -2px;
+	}
+	.ur{
+		top   : -2px;
+		right : -2px;
+	}
+	.dl{
+		bottom : -2px;
+		left   : -2px;
+	}
+	.dr{
+		right  : -2px;
+		bottom : -2px;
+	}
+}
+button{
+	position         : relative;
+	padding          : 8px;
+	background-color : transparent;
+	border           : 1px @blue1 solid;
+	color : @blue0;
+	font-size: 0.6em;
+	&.selected{
+		background-color : fade(@blue1, 80%);
+		border           : 1px solid @blue0;
+	}
+	&.disabled{
+		opacity : 0.3;
+		pointer : default;
+		&:hover{
+			background-color : @grey3;
+		}
+	}
+	&:hover{
+		background-color : @blue1;
+		border-color : @blue0;
+	}
+}

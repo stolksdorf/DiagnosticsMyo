@@ -1,0 +1,84 @@
+.status{
+	margin-top: 50px;
+	.title{
+		.scifi();
+		position       : relative;
+		padding-left   : 10px;
+		font-size      : 1.3em;
+		text-transform : uppercase;
+		border-left    : solid @blue1 1px;
+		margin-bottom: 20px;
+	}
+
+	.locked, .unlocked{
+		.animateAll();
+		position: relative;
+		display: inline-block;
+		line-height: 50px;
+		border-bottom: 1px solid @blue1;
+		border-top: 1px solid @blue1;
+
+		color : @blue1;
+
+		padding : 0px 10px;
+		i{
+			.animate(opacity);
+			opacity : 0.1;
+		}
+
+		&.selected, &:hover{
+			border-bottom: 1px solid @blue0;
+			border-top: 1px solid @blue0;
+			color : @blue0;
+			i{
+				opacity: 1;
+			}
+		}
+
+	}
+
+	.connect{
+		color : @yellow;
+	}
+
+	.armBusy{
+		margin: 10px 0px;
+		.scifi();
+		.animate(color);
+		color : @blue1;
+		&.selected{
+			.busy_light{
+				background-color: @red;
+				border-color : @red;
+				&>div{
+					background-color: @red;
+				}
+			}
+			color : @blue0;
+		}
+
+		.busy_light{
+			display: inline-block;
+			vertical-align: top;
+			.animateAll();
+			background-color: transparent;
+			border : 1px solid fade(@red, 20%);
+			width: 10px;
+			height: 10px;
+			border-radius: 5em;
+
+			&>div{
+				.animate(background-color);
+				background-color: transparent;
+				width: 10px;
+				height: 10px;
+				border-radius: 5em;
+				.blur(4px);
+			}
+
+
+		}
+	}
+
+
+}
